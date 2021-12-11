@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		504289242764496400455B05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 504289232764496400455B05 /* main.m */; };
+		504289242764496400455B05 /* CAToneFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 504289232764496400455B05 /* CAToneFileGenerator.m */; };
+		5042892C2764498B00455B05 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5042892B2764498B00455B05 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		504289202764496400455B05 /* CAToneFileGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAToneFileGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
-		504289232764496400455B05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		504289232764496400455B05 /* CAToneFileGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAToneFileGenerator.m; sourceTree = "<group>"; };
+		5042892B2764498B00455B05 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5042892C2764498B00455B05 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				504289222764496400455B05 /* CAToneFileGenerator */,
 				504289212764496400455B05 /* Products */,
+				5042892A2764498B00455B05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +61,17 @@
 		504289222764496400455B05 /* CAToneFileGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				504289232764496400455B05 /* main.m */,
+				504289232764496400455B05 /* CAToneFileGenerator.m */,
 			);
 			path = CAToneFileGenerator;
+			sourceTree = "<group>";
+		};
+		5042892A2764498B00455B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5042892B2764498B00455B05 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504289242764496400455B05 /* main.m in Sources */,
+				504289242764496400455B05 /* CAToneFileGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
